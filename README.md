@@ -6,7 +6,7 @@
 [Liste o nome completo de todos os integrantes do grupo com seus respectivos e-mails]
  * Caio Gabriel Nunes- gabrielnunesdelima2003@gmail.com
  * Felipe F P R  -  felipefpr@gmail.com
- * João Vitor  - maria@abc.com
+ * João Victor Morais B. da Silva  - joaovictor8454@gmail.com
  * Ramon Artur Vilela de Oliveira - ramonvilela92@hotmail.com
 
 ## Descrição geral do projeto 
