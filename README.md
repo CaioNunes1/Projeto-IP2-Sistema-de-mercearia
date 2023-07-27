@@ -10,19 +10,19 @@
 ## Descrição:
 O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamento de produtos e gerenciamento de funcionários, atendendo às necessidades tanto dos funcionários da padaria quanto dos administradores.
 
- 1. Quem vai usar o programa?
+1. Quem vai usar o programa?
 
    R: Funcionários e administradores da empresa.
 
- 2. Que serviços são “necessários” (leia-se: importantes para os clientes e usuários)?
+2. Que serviços são “necessários” (leia-se: importantes para os clientes e usuários)?
 
    R: Cadastro de itens no estoque, registro de vendas, registro de despesas e etc.
 
- 3.  qual a principal funcionalidade do seu sistema?
+3.  qual a principal funcionalidade do seu sistema?
 
    R: Registrar e gerenciar vendas e estoque de produtos de uma padaria.
      
- 4. Quais serviços cada usuário pode executar?
+4. Quais serviços cada usuário pode executar?
     
    R: registrar vendas, cadastrar produtos no estoque, registrar despesas e etc.
 
