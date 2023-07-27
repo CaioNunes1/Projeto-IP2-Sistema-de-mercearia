@@ -15,8 +15,10 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
    - Funcionários e administradores da empresa.
 
 
-2. **Que serviços são “necessários” (leia-se: importantes para os clientes e usuários)?**
-   - Cadastro de itens no estoque, registro de vendas, registro de despesas e etc.
+2. **Que serviços são importantes para os usuários?**
+   - Cadastro de itens no estoque
+   -  registro de vendas
+   -  registro de despesas e etc
 
 
 3. **Qual a principal funcionalidade do seu sistema?**
@@ -24,7 +26,17 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 
 
 4. **Quais serviços cada usuário pode executar?**
-   - Registrar vendas, cadastrar produtos no estoque, registrar despesas, etc.
+- Funcionários podem:
+  - Registrar vendas.
+  - Cadastrar produtos no estoque.
+
+
+- Administradores:
+  - Gerenciar funcionários da empresa (adicionar, editar, remover).
+  - Visualizar relatório de vendas dos produtos, com informações de quantidade vendida e lucro obtido.
+ 
+
+
 
 ## Requisitos:
 
