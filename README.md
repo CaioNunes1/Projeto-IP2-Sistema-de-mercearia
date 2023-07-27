@@ -51,7 +51,7 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 
 **REQ3 - Relatório de Vendas dos Produtos:**
 
-   - O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro. Essa ação só pode ser realizada por um usuário administrador.
+   -    O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro. Essa ação só pode ser realizada por um usuário administrador.
 
 <br>
 
