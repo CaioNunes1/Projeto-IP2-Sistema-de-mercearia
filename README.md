@@ -24,7 +24,7 @@ O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamen
      
  4. Quais serviços cada usuário pode executar?
     
-    R: registrar vendas, cadastrar produtos no estoque, registrar despesas e etc.
+   R: registrar vendas, cadastrar produtos no estoque, registrar despesas e etc.
 
 ## Requisitos:
  * **REQ1 Controle de Acesso:**
