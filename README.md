@@ -46,7 +46,9 @@
 **REQ1 - Gerenciamento de Perfil:**
 
    - O sistema deve possiblitar o gerenciamento (Create, Recover, Update e Delete - CRUD) de perfis dos usuários que utilizarão o sistema.
-     
+
+<br>
+
 **REQ2 - Controle de Acesso:**
 
    - O sistema deve implementar um controle de acesso baseado em perfis de usuário. Os usuários serão categorizados em dois tipos o administrador/gerente e funcionário, garantindo que cada perfil tenha acesso apenas às funcionalidades autorizadas para sua respectiva função.
