@@ -14,26 +14,29 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 1. **Quem vai usar o programa?**
    - Funcionários e administradores da empresa.
 
+<br>
 
 2. **Que serviços são importantes para os usuários?**
    - Cadastro de itens no estoque
    -  registro de vendas
    -  registro de despesas e etc
 
+<br>
 
 3. **Qual a principal funcionalidade do seu sistema?**
    - Registrar e gerenciar vendas e estoque de produtos de uma padaria.
 
+<br>
 
 4. **Quais serviços cada usuário pode executar?**
-- Funcionários podem:
-  - Registrar vendas.
-  - Cadastrar produtos no estoque.
+   - Funcionários podem:
+     - Registrar vendas.
+     - Cadastrar produtos no estoque.
 
 
-- Administradores:
-  - Gerenciar funcionários da empresa (adicionar, editar, remover).
-  - Visualizar relatório de vendas dos produtos, com informações de quantidade vendida e lucro obtido.
+   - Administradores:
+     - Gerenciar funcionários da empresa (adicionar, editar, remover).
+     - Visualizar relatório de vendas dos produtos, com informações de quantidade vendida e lucro obtido.
 
 # Requisitos:
 
@@ -51,7 +54,7 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 
 **REQ3 - Relatório de Vendas dos Produtos:**
 
-   -    O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro. Essa ação só pode ser realizada por um usuário administrador.
+   -  O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro. Essa ação só pode ser realizada por um usuário administrador.
 
 <br>
 
