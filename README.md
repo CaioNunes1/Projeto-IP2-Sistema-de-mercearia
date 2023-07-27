@@ -8,7 +8,7 @@
 
 
 ## Descrição:
-   O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e operação de uma padaria. O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamento de produtos e gerenciamento de funcionários, atendendo às necessidades tanto dos funcionários da padaria quanto dos administradores.
+   - O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamento de produtos e gerenciamento de funcionários, atendendo às necessidades tanto dos funcionários da padaria quanto dos administradores.
 
 ### Perguntas e Respostas:
 
@@ -43,30 +43,30 @@
    
 # Requisitos:
 
-**REQ1 - Controle de Acesso:**
+**REQ1 - Gerenciamento de Perfil:**
 
-   - O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo administrador e funcionário.
+   - O sistema deve possiblitar o gerenciamento (Create, Recover, Update e Delete - CRUD) de perfis dos usuários que utilizarão o sistema.
+     
+**REQ2 - Controle de Acesso:**
+
+   - O sistema deve implementar um controle de acesso baseado em perfis de usuário. Os usuários serão categorizados em dois tipos o administrador/gerente e funcionário, garantindo que cada perfil tenha acesso apenas às funcionalidades autorizadas para sua respectiva função.
 
 <br>
 
-**REQ2 - Venda de Produtos e Histórico:**
+**REQ3 - Venda de Produtos e Histórico:**
 
   - O sistema deve permitir a venda de produtos previamente cadastrados e salvá-los como em um histórico de vendas.
 
 <br>
 
-**REQ3 - Relatório de Vendas dos Produtos:**
+**REQ4 - Relatório de Vendas dos Produtos:**
 
    - O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro.
 
 <br>
 
-**REQ4 - Gerenciamento de Produtos:**
+**REQ5 - Gerenciamento de Produtos:**
 
-   - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de produtos.
+   - O sistema deve permitir o gerenciamento CRUD de produtos.
 
-<br>
 
-**REQ5 - Gerenciamento de Funcionários:**
-
-   - O sistema deve permitir o gerenciamento (CRUD) de funcionários da empresa.
