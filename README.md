@@ -7,7 +7,7 @@
 - Ramon Artur Vilela de Oliveira - ramonvilela92@hotmail.com
 
 ## Descrição:
-O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e operação de uma padaria. O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamento de produtos e gerenciamento de funcionários, atendendo às necessidades tanto dos funcionários da padaria quanto dos administradores.
+   O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e operação de uma padaria. O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamento de produtos e gerenciamento de funcionários, atendendo às necessidades tanto dos funcionários da padaria quanto dos administradores.
 
 ### Perguntas e Respostas:
 
@@ -44,7 +44,6 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 5. **Como será o controle de estoque dos produtos?**
    - O sistema manterá um controle atualizado do estoque, reduzindo a quantidade disponível após cada venda.
   
-     <br>
      
 # Requisitos:
 
@@ -62,7 +61,7 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 
 **REQ3 - Relatório de Vendas dos Produtos:**
 
-   -  O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro.
+   - O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro.
 
 <br>
 
