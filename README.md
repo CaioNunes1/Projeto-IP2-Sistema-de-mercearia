@@ -40,6 +40,12 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
      - Executar todas as funcionalidades que um funcionário pode executar.
 
      <br>
+
+5. **Como será o controle de estoque dos produtos?**
+   - O sistema manterá um controle atualizado do estoque, reduzindo a quantidade disponível após cada venda.
+  
+     <br>
+     
 # Requisitos:
 
 **REQ1 - Controle de Acesso:**
@@ -68,4 +74,4 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 
 **REQ5 - Gerenciamento de Funcionários:**
 
-   - O sistema deve permitir o gerenciamento (CRUD) de funcionários da empresa e essa ação somente poderá ser executada por usuários administradores.
+   - O sistema deve permitir o gerenciamento (CRUD) de funcionários da empresa.
