@@ -43,8 +43,7 @@
 
 5. **Como será o controle de estoque dos produtos?**
    - O sistema manterá um controle atualizado do estoque, reduzindo a quantidade disponível após cada venda.
-  
-     
+   
 # Requisitos:
 
 **REQ1 - Controle de Acesso:**
