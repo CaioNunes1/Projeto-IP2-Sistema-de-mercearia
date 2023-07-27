@@ -20,7 +20,7 @@ O sistema oferece recursos de controle de acesso, venda de produtos, gerenciamen
 
  3.  qual a principal funcionalidade do seu sistema?
 
-   R: Gerenciar e registrar vendas, estoque uma padaria.
+   R: Registrar e gerenciar vendas e estoque de produtos de uma padaria.
      
  4. Quais serviços cada usuário pode executar?
     
