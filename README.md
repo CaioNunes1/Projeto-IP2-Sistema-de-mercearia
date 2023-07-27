@@ -39,22 +39,28 @@ O Sistema de Padaria é uma aplicação web projetada para facilitar a gestão e
 
 **REQ1 - Controle de Acesso:**
 
-   - O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo administrador e funcionário.
+   O sistema deve controlar o acesso através de login e senha. Os usuários do sistema serão do tipo administrador e funcionário.
+
+<br>
 
 **REQ2 - Venda de Produtos e Histórico:**
 
-   - O sistema deve permitir a venda de produtos previamente cadastrados e salvá-los como em um histórico de vendas, que poderá ser acessado por um usuário administrador.
+   O sistema deve permitir a venda de produtos previamente cadastrados e salvá-los como em um histórico de vendas, que poderá ser acessado por um usuário administrador.
+
+<br>
 
 **REQ3 - Relatório de Vendas dos Produtos:**
 
-   - O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro. Essa ação só pode ser realizada por um usuário administrador.
+   O sistema deve permitir um relatório das vendas de cada produto vendido, informando a quantidade vendida, o valor de lucro obtido, classificação dos produtos mais vendidos e os produtos que mais geraram lucro. Essa ação só pode ser realizada por um usuário administrador.
+
+<br>
 
 **REQ4 - Gerenciamento de Produtos:**
 
-   - O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de produtos e essa ação pode ser feita por funcionários comuns.
+   O sistema deve permitir o gerenciamento (Create, Recover, Update e Delete - CRUD) de produtos e essa ação pode ser feita por funcionários comuns.
+
+<br>
 
 **REQ5 - Gerenciamento de Funcionários:**
 
-O sistema deve permitir o gerenciamento (CRUD) de funcionários da empresa e essa ação somente poderá ser executada por usuários administradores. Usuários administradores também podem executar todas as funcionalidades que um funcionário comum pode executar.
-
-
+   O sistema deve permitir o gerenciamento (CRUD) de funcionários da empresa e essa ação somente poderá ser executada por usuários administradores. Usuários administradores também podem executar todas as funcionalidades que um funcionário comum pode executar.
