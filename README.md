@@ -1,4 +1,4 @@
-# Sistema de Padaria
+# Sistema de mercearia
 
 ## Integrantes do grupo:
 - Caio Gabriel Nunes de Lima - gabrielnunesdelima2003@gmail.com
