@@ -37,6 +37,9 @@
 
    - Administradores/gerentes:
      - Gerenciar funcionários da empresa (adicionar, editar, remover).
+     - gerenciar os fornecedores da empresa (adicionar, editar, remover).
+     - gerenciar os perfis que acessarão o sistema.
+     - vizualizar o histórico de compras dos clientes e dos fornecedores.
      - Visualizar relatório de vendas dos produtos, com informações de quantidade vendida e lucro obtido.
      - Executar todas as funcionalidades que um funcionário pode executar.
 
@@ -55,7 +58,7 @@
 
 <br>
 
-**REQ3 - Venda de Produtos e Histórico:**
+**REQ3 - Venda de Produtos e Histórico de compras dos clientes:**
 
   - O sistema deve permitir a venda de produtos previamente cadastrados e salvá-los como em um histórico de vendas.
 
@@ -67,8 +70,10 @@
 
 <br>
 
-**REQ5 - Gerenciamento de Produtos:**
+**REQ5 - Gerenciamento de Produtos e estoque:**
 
-   - O sistema deve permitir o gerenciamento CRUD de produtos.
+   - O sistema deve permitir o gerenciamento do estoque e CRUD dos produtos cadastrados.
 
+**REQ6 - Gerenciamento de fornecedores e histórico de compras da mercearia:
 
+   - O sistema deve permitir o gerenciamento CRUD dos fornecedores da loja, além de registrar e listar todas as compras realizadas dos fornecedores.
