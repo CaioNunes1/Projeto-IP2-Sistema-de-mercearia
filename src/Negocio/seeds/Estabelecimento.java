@@ -15,7 +15,6 @@ public class Estabelecimento {
         this.categoria = categoriaEstabelecimento;
     }
 
-    @Override
     public String toString() {
         return "Estabelecimento{" +
                 "nome='" + nome + '\'' +

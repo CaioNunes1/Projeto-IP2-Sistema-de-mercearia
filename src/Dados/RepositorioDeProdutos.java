@@ -4,6 +4,8 @@ import Negocio.seeds.Produtos;
 
 import java.util.ArrayList;
 
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
 public class RepositorioDeProdutos {
     ArrayList <Produtos> produtosRep;
 
@@ -13,7 +15,7 @@ public class RepositorioDeProdutos {
     }
 
 
-    //MÉTODOS:
+
     public boolean verificarProdutosIguais(Produtos produtoX){
         boolean produtoJaExistente = false;
 
@@ -61,5 +63,8 @@ public class RepositorioDeProdutos {
     //GET:
     public ArrayList <Produtos> getProdutosRep() {
         return produtosRep;
+    }
+    public ArrayList<Produtos> filtrarProdutos(Produtos prod){
+    	return produtosRep;//provisorio
     }
 }

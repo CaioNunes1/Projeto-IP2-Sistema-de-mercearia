@@ -12,7 +12,6 @@ public class RepositorioDeFornecedor {
         this.fornecedorRep = new ArrayList<>();
     }
 
-    //MÉTODOS:
     public boolean verificarFornecedoresIguais(Fornecedor fornecedorX){
         boolean fornecedorJaExistente = false;
 

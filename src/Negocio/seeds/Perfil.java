@@ -1,7 +1,7 @@
 package Negocio.seeds;
 
 public class Perfil {
-    private String nome;
+    private String nome;//tirar nome pois funcionario ja tem um nome
     private String senha;
     private Funcionario usuario;
 
@@ -25,12 +25,7 @@ public class Perfil {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    public String getTipo() {
-        return tipo;
-    }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
+    
     public Funcionario getUsuario() {
         return usuario;
     }
