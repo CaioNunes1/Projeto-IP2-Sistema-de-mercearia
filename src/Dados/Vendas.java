@@ -9,7 +9,7 @@ public class Vendas {
 	private Produtos produto;
 	private Funcionario funcionario;
 	public void efetuarVenda() {
-		
+		//funcionario efetua uma venda
 	}
 	public void cancelarVenda() {
 		
