@@ -18,14 +18,15 @@
 <br>
 
 2. **Que serviços são importantes para os usuários?**
-   - Cadastro de itens no estoque
+   -  cadastro de produtos
    -  registro de vendas
-   -  registro de despesas e etc
-
+   -  registro de compras do fornecedor
+   -  registro e a atualização do estoque
+   
 <br>
 
 3. **Qual a principal funcionalidade do seu sistema?**
-   - Registrar e gerenciar vendas e estoque de produtos de uma padaria.
+   - Registrar e gerenciar vendas e estoque de produtos de uma mercearia.
 
 <br>
 
