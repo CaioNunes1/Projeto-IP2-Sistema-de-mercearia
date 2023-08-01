@@ -75,6 +75,8 @@
 
    - O sistema deve permitir o gerenciamento do estoque e CRUD dos produtos cadastrados.
 
+<br>
+
 **REQ6 - Gerenciamento de fornecedores e histórico de compras da mercearia:
 
    - O sistema deve permitir o gerenciamento CRUD dos fornecedores da loja, além de registrar e listar todas as compras realizadas dos fornecedores.
