@@ -1,0 +1,67 @@
+package Dados;
+
+import Negocio.Excecoes_Repositorio;
+import Negocio.seeds.Produtos;
+
+
+import java.util.ArrayList;
+
+public class RepositorioDeProdutos {
+    ArrayList <Produtos> produtosRep;
+
+    
+    //CONSTRUTOR:
+    public RepositorioDeProdutos(){
+        this.produtosRep = new ArrayList<>();
+    }
+
+
+    //MÉTODOS:
+    public boolean verificarProdutosIguais(Produtos produtoX){
+        boolean produtoJaExistente = false;
+
+        for (int i = 0; i < produtosRep.size() && !produtoJaExistente; i++){
+            Produtos produto = produtosRep.get(i);
+
+            if (produtoX.equals(produto)){
+                produtoJaExistente = true;
+            }
+        }
+        return produtoJaExistente;
+    }
+
+    public void cadastrarProduto(Produtos produtoX)  { 
+    	
+    		if (!verificarProdutosIguais(produtoX)){
+                produtosRep.add(produtoX);
+                
+            }
+    		else {
+    			throw Excecoes_Repositorio.produtoExistente();
+    		}	
+    }
+
+    public void removerProduto(Produtos produtoX)  {
+        if (verificarProdutosIguais(produtoX)){
+            produtosRep.remove(produtoX);
+
+        }
+        else {
+        	throw Excecoes_Repositorio.produtoNaoExistente();
+        }
+    }
+
+    public void alterarProduto(Produtos produtoX){
+        if(verificarProdutosIguais(produtoX)){
+        	
+        }
+        else{
+        	throw Excecoes_Repositorio.produtoNaoExistente();
+        }
+    }
+
+    //GET:
+    public ArrayList <Produtos> getProdutosRep() {
+        return produtosRep;
+    }
+}
