@@ -6,6 +6,7 @@ import Dados.RepositorioDeProdutos;
 import Dados.RepositorioFuncionarios;
 import Dados.RepositorioVendas;
 import Negocio.seeds.Funcionario;
+import Negocio.seeds.Perfil;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -36,18 +37,93 @@ public class ControladorSistemaPadaria {
 		return controlador;
 		
 	}
-	public void mostrarMenu() {
+	public int paginaInicial() {
 		int opMostrarMenu=0;
-		System.out.println("Bem vindo ao sitema da mercearia \n1-Acesso ao menu\n-2Adicionar perfil");
-		try {
-			opMostrarMenu=scan.nextInt();
-			System.out.printf("Opção %i digitada...");
-		}catch(InputMismatchException e){
-			System.out.println("Entrada inválida o valor digitado não é um inteiro");
+		boolean opcaoValida=false;
+		System.out.println("Bem vindo ao sitema da mercearia \n1-Acesso ao menu\n-2Adicionar perfil\n3-Sair");
+		while(opcaoValida!=true) {
+			try {
+				opMostrarMenu=scan.nextInt();
+				System.out.printf("Opção %i digitada...");
+				if(opMostrarMenu<1|| opMostrarMenu>3) {
+					System.out.println("Entre com uma opção entre 1 e 3");
+				}
+				else {
+					opcaoValida=true;
+				}
+			}catch(InputMismatchException e){
+				System.out.println("Entrada inválida o valor digitado não é um inteiro");
+			}catch(NullPointerException e) {
+				System.out.println("Entrada nula, digite novamente");
+			}
+		}
+		
+		return opMostrarMenu; 
+	}
+	public void mostrarMenuPrincipal() {
+		String nome="";
+		String senha="";
+		String categoria="";
+		int op=0,opFunc=0;
+		System.out.println("Bem vindo ao menu principal da mercearia");
+		int opMostraMenu=paginaInicial();
+		if(opMostraMenu==1) {
+			try {
+				System.out.println("Digite seu nome");
+				nome=scan.nextLine();
+				
+				System.out.println("Digite sua senha");
+				senha=scan.nextLine();
+				
+			}catch(NullPointerException e) {
+				System.out.println("Entrada nula, digite novamente");
+			}
+			for(Perfil p:repPerfis.getPerfisRep()) {
+				if(p.getNome().equals(nome)&& p.getSenha().equals(senha)) {
+					categoria=p.getUsuario().getCategoria();
+					break;
+				}
+			}
+			
+			if(categoria.equalsIgnoreCase("Funcionário")) {
+				System.out.printf("Bem vindo funcionário %s",nome);
+				try {
+					System.out.println("Opções:\n1-Efeturar compra");
+					 opFunc=scan.nextInt();	
+				}catch(NullPointerException e) {
+					System.out.println("Entrada nula, digite novamente");
+				}catch(InputMismatchException e) {
+					System.out.println("Entrada inválida o valor digitado não é um inteiro");
+				}
+				if(opFunc!=1) {
+					
+				}
+				
+			}
+			if(categoria.equalsIgnoreCase("Gerente")) {
+				
+				System.out.printf("Bem vindo funcionário %s",nome);
+				try {
+					System.out.println("Opções:\n1-Efeturar compra\n2-Adicionar produto no estoque\n"
+							+ "3-Remover produto do estoque\n4-Relatorio do estoque\n5-Histórico de Vendas");
+					op=scan.nextInt();
+				}catch(NullPointerException e) {
+					System.out.println("Entrada nula, digite novamente");
+				}catch(InputMismatchException e) {
+					System.out.println("Entrada inválida o valor digitado não é um inteiro");
+				}
+				if(op<0|| op>5) {
+					System.out.println("Digite um valor que esteja nas opções.");
+				}
+			}
+			
+			
 		}
 	}
 	
 	public void adicionarFuncionario() {
+		String cidade="";
+		String bairro="",ruaNumero="",endereco="",senha="";
 		System.out.println("Qual tipo de funcionario deseja dicionar\n1-Gerente\n2-Funcionário");
 		String categoria="";
 		//OPÇÃO MENU
@@ -61,6 +137,8 @@ public class ControladorSistemaPadaria {
 			}
 		}catch(InputMismatchException e) {
 			System.out.println("Entrada inválida o valor digitado não é um inteiro");
+		}catch(NullPointerException e) {
+			System.out.println("Entrada nula, digite novamente");
 		}
 		
 		//NOME FUNCIONARIO
@@ -98,20 +176,51 @@ public class ControladorSistemaPadaria {
 		
 		
 		//ENDEREÇO DO FUNCIONARIO
+		try {
 			System.out.println("Digite o cidade do funcionario:");
-			String cidade=scan.nextLine();	
+			cidade=scan.nextLine();	
 			
 			System.out.println("Digite o bairro:");
-			String bairro=scan.nextLine();
+			bairro=scan.nextLine();
 			
 			System.out.println("Digite a rua e o número:");
-			String ruaNumero=scan.nextLine();
+			ruaNumero=scan.nextLine();
+			endereco=cidade+" "+bairro+" "+ruaNumero;
+		}catch(NullPointerException e) {
+			System.out.println("Entrada nula, digite novamente ");
+		}
+			
 		
-			String endereco=cidade+" "+bairro+" "+ruaNumero;
 		System.out.printf("Funcionario %s do tipo %s adicionado",nome,categoria);
+		
 		
 		Funcionario funcionario=new Funcionario(nome,cpfInt,dataAniversario,endereco,categoria);
 		repFuncionarios.cadastrarPerfil(funcionario);
 		
+		try{
+			System.out.println("Agora crie uma senha do perfil para acesar o sistema");
+			senha=scan.nextLine();
+		}catch(NullPointerException e) {
+			System.out.println("Entrada nula, digite novamente ");
+		}
+		Perfil perfil=new Perfil(nome,senha,funcionario);
+		repPerfis.cadastrarPerfil(perfil);
+		
+		
+	}
+	
+	public void efetuarCompra() {
+		String nomeProd="";
+		String marca="";
+		try {
+			System.out.println("Você selecionou Efetuar Compra\nDigite o nome do produto");
+			nomeProd=scan.nextLine();
+			
+			System.out.println("Digite a marca do produto");
+			marca=scan.nextLine();
+		}catch(NullPointerException e) {
+			System.out.println("Entrada nula, digite novamente ");
+		}
+		repProdutos.existeProdutoPorNomeEMarca(nomeProd, marca);
 	}
 }

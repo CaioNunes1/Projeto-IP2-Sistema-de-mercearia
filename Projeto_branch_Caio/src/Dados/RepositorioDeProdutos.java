@@ -23,11 +23,21 @@ public class RepositorioDeProdutos {
         for (int i = 0; i < produtosRep.size() && !produtoJaExistente; i++){
             Produtos produto = produtosRep.get(i);
 
-            if (produtoX.equals(produto)){
+            if (produtoX.getNome().equals(produto.getNome())&& produtoX.getMarca().equals(produto.getMarca())){
                 produtoJaExistente = true;
+                break;
             }
         }
         return produtoJaExistente;
+    }
+    
+    public Produtos existeProdutoPorNomeEMarca(String nome,String marca) {
+    	for(Produtos p:produtosRep) {
+    		if(p.getMarca().equalsIgnoreCase(marca)&& p.getNome().equals(nome)) {
+    			return p;
+    		}
+    	}
+    	return null;
     }
 
     public void cadastrarProduto(Produtos produtoX)  { 

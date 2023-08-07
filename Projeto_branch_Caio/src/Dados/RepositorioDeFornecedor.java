@@ -22,6 +22,7 @@ public class RepositorioDeFornecedor {
 
             if (fornecedorX.equals(fornecedor)){
                 fornecedorJaExistente = true;
+                break;
             }
         }
         return fornecedorJaExistente;
