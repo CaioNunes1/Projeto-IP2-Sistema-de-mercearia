@@ -7,5 +7,6 @@ module com.example.projetoip2 {
     requires org.kordamp.bootstrapfx.core;
 
     opens com.example.projetoip2 to javafx.fxml;
-    exports com.example.projetoip2;
+    exports com.example.projetoip2.GUI;
+    opens com.example.projetoip2.GUI to javafx.fxml;
 }

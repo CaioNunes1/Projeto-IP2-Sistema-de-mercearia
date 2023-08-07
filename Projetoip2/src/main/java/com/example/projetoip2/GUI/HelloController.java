@@ -1,4 +1,4 @@
-package com.example.projetoip2;
+package com.example.projetoip2.GUI;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
