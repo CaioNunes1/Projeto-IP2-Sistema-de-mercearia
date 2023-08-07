@@ -7,6 +7,8 @@ import Dados.RepositorioFuncionarios;
 import Dados.RepositorioVendas;
 import Negocio.seeds.Funcionario;
 import Negocio.seeds.Perfil;
+import Negocio.seeds.Produtos;
+import Negocio.seeds.ProdutosVendidosPorPeso;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -218,9 +220,24 @@ public class ControladorSistemaPadaria {
 			
 			System.out.println("Digite a marca do produto");
 			marca=scan.nextLine();
+			
+			
 		}catch(NullPointerException e) {
 			System.out.println("Entrada nula, digite novamente ");
 		}
-		repProdutos.existeProdutoPorNomeEMarca(nomeProd, marca);
+		
+		Produtos prod=repProdutos.existeProdutoPorNomeEMarca(nomeProd, marca);//retorna o produto do repositorio que são do tipo prod.
+		
+		// vendidos por peso ou ou prod.vendidos por unidade
+		if(prod!=null) {
+			if(prod instanceof ProdutosVendidosPorPeso) {
+				((ProdutosVendidosPorPeso) prod).CalculoPreco();
+			}	
+		}
+		else {
+			System.out.println("Produto não existente ");
+		}
+		
+		
 	}
 }

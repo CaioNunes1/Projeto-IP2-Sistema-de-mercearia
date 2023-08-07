@@ -16,6 +16,9 @@ public abstract class Produtos {
 		PrecoVenda = precoVenda;
 		this.fornecedor = fornecedor;
 	}
+    public Produtos() {
+    	
+    }
 
     public Fornecedor getFornecedor() {
 		return fornecedor;
