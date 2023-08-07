@@ -22,6 +22,7 @@ public class RepositorioFuncionarios {
 
             if (funcionarioX.equals(funcionario)){
                 funcionarioJaExistente = true;
+                break;
             }
         }
         return funcionarioJaExistente;

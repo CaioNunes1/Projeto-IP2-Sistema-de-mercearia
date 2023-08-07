@@ -19,8 +19,9 @@ public class RepositorioDePerfis {
         for (int i = 0; i < perfisRep.size() && !perfilJaExistente; i++){
             Perfil perfil = perfisRep.get(i);
 
-            if (perfilX.equals(perfil)){
+            if (perfilX.getNome().equals(perfil.getNome()) && perfilX.getSenha().equals(perfil.getSenha())){
                 perfilJaExistente = true;
+                break;
             }
         }
         return perfilJaExistente;
@@ -59,5 +60,9 @@ public class RepositorioDePerfis {
     //GET:
     public ArrayList <Perfil> getPerfisRep() {
         return perfisRep;
+    }
+    public boolean equals(Object perfil) {
+    	
+    	return false;
     }
 }
