@@ -1,6 +1,6 @@
 package Negocio.seeds;
 
-public  class ProdutosVendidosPorPeso extends Produtos {
+public class ProdutosVendidosPorPeso extends Produtos {
     private double peso;
     private double precoPorQuilo;
 
@@ -23,6 +23,7 @@ public  class ProdutosVendidosPorPeso extends Produtos {
     }
 
 	//GETS AND SETS:
+
     public double getPeso() {
         return peso;
     }

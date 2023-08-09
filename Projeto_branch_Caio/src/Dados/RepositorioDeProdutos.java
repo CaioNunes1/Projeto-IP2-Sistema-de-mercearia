@@ -44,15 +44,15 @@ public class RepositorioDeProdutos {
     	return prodContemNome;
     }
     
-    public List<Produtos> ProdNomeParaAdicionarNoCarrinho(String nome,String marca) {
-    	List<Produtos> prodContemNome=new ArrayList<Produtos>();
-    	
+    public Produtos ProdNomeParaAdicionarNoCarrinho(String nome,String marca) {
+
     	for(Produtos p:produtosRep) {
     		 if(p.getNome().equalsIgnoreCase(nome) && p.getMarca().equalsIgnoreCase(marca)){
-    			 prodContemNome.add(p);
+    			 return p;
+                 break;
     		 }
     	}
-    	return prodContemNome;
+    	return null;
     }
 
     public void cadastrarProduto(Produtos produtoX)  { 
