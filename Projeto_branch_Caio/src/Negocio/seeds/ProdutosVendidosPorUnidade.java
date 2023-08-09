@@ -1,6 +1,6 @@
 package Negocio.seeds;
 
-public abstract class ProdutosVendidosPorUnidade extends Produtos {
+public class ProdutosVendidosPorUnidade extends Produtos {
     private int quantidade;
 
     //CONSRUTOR:
@@ -26,4 +26,8 @@ public abstract class ProdutosVendidosPorUnidade extends Produtos {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
+	@Override
+	public String toString() {
+		return "ProdutosVendidosPorUnidade [quantidade=" + quantidade + "]";
+	}
 }
