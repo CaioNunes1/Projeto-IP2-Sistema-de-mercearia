@@ -74,7 +74,7 @@ public class Vendas {
 				System.out.println("Entrada inv�lida o valor digitado n�o � um inteiro");
 			}
 			if(quantidade>0){
-				prodEscolhido=
+				//
 			}
 		}
 
