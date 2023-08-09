@@ -48,15 +48,15 @@ public class ControladorSistemaPadaria {
 		while(opcaoValida!=true) {
 			try {
 				opMostrarMenu=scan.nextInt();
-				System.out.printf("Opção %i digitada...");
+				System.out.printf("Opï¿½ï¿½o %i digitada...");
 				if(opMostrarMenu<1|| opMostrarMenu>3) {
-					System.out.println("Entre com uma opção entre 1 e 3");
+					System.out.println("Entre com uma opï¿½ï¿½o entre 1 e 3");
 				}
 				else {
 					opcaoValida=true;
 				}
 			}catch(InputMismatchException e){
-				System.out.println("Entrada inválida o valor digitado não é um inteiro");
+				System.out.println("Entrada invï¿½lida o valor digitado nï¿½o ï¿½ um inteiro");
 			}catch(NullPointerException e) {
 				System.out.println("Entrada nula, digite novamente");
 			}
@@ -89,35 +89,35 @@ public class ControladorSistemaPadaria {
 				}
 			}
 			
-			if(categoria.equalsIgnoreCase("Funcionário")) {
-				System.out.printf("Bem vindo funcionário %s",nome);
+			if(categoria.equalsIgnoreCase("Funcionï¿½rio")) {
+				System.out.printf("Bem vindo funcionï¿½rio %s",nome);
 				try {
-					System.out.println("Opções:\n1-Efeturar compra");
+					System.out.println("Opï¿½ï¿½es:\n1-Efeturar compra");
 					 opFunc=scan.nextInt();	
 				}catch(NullPointerException e) {
 					System.out.println("Entrada nula, digite novamente");
 				}catch(InputMismatchException e) {
-					System.out.println("Entrada inválida o valor digitado não é um inteiro");
+					System.out.println("Entrada invï¿½lida o valor digitado nï¿½o ï¿½ um inteiro");
 				}
 				if(opFunc!=1) {
-					
+					//chamar o metodo efetuaar compra
 				}
 				
 			}
 			if(categoria.equalsIgnoreCase("Gerente")) {
 				
-				System.out.printf("Bem vindo funcionário %s",nome);
+				System.out.printf("Bem vindo funcionï¿½rio %s",nome);
 				try {
-					System.out.println("Opções:\n1-Efeturar compra\n2-Adicionar produto no estoque\n"
-							+ "3-Remover produto do estoque\n4-Relatorio do estoque\n5-Histórico de Vendas");
+					System.out.println("Opï¿½ï¿½es:\n1-Efeturar compra\n2-Adicionar produto no estoque\n"
+							+ "3-Remover produto do estoque\n4-Relatorio do estoque\n5-Histï¿½rico de Vendas");
 					op=scan.nextInt();
 				}catch(NullPointerException e) {
 					System.out.println("Entrada nula, digite novamente");
 				}catch(InputMismatchException e) {
-					System.out.println("Entrada inválida o valor digitado não é um inteiro");
+					System.out.println("Entrada invï¿½lida o valor digitado nï¿½o ï¿½ um inteiro");
 				}
 				if(op<0|| op>5) {
-					System.out.println("Digite um valor que esteja nas opções.");
+					System.out.println("Digite um valor que esteja nas opï¿½ï¿½es.");
 				}
 			}
 			
@@ -128,19 +128,19 @@ public class ControladorSistemaPadaria {
 	public void adicionarFuncionario() {
 		String cidade="";
 		String bairro="",ruaNumero="",endereco="",senha="";
-		System.out.println("Qual tipo de funcionario deseja dicionar\n1-Gerente\n2-Funcionário");
+		System.out.println("Qual tipo de funcionario deseja dicionar\n1-Gerente\n2-Funcionï¿½rio");
 		String categoria="";
-		//OPÇÃO MENU
+		//OPï¿½ï¿½O MENU
 		try{
 			int opPerfil=scan.nextInt();
 			if(opPerfil==1) {
 				categoria="Gerente";
 			}
 			if(opPerfil==2) {
-				categoria="Funcionário";
+				categoria="Funcionï¿½rio";
 			}
 		}catch(InputMismatchException e) {
-			System.out.println("Entrada inválida o valor digitado não é um inteiro");
+			System.out.println("Entrada invï¿½lida o valor digitado nï¿½o ï¿½ um inteiro");
 		}catch(NullPointerException e) {
 			System.out.println("Entrada nula, digite novamente");
 		}
@@ -151,15 +151,15 @@ public class ControladorSistemaPadaria {
 		
 		
 		//CPF DO FUNCIONARIO
-		System.out.println("Digite o cpf do funcionario em números");
+		System.out.println("Digite o cpf do funcionario em nï¿½meros");
 		String cpf=scan.nextLine();
 		int cpfInt=0;
 		try {
 				cpfInt=Integer.parseInt(cpf);
-				System.out.printf("o numero do cpf é %i",cpfInt);
+				System.out.printf("o numero do cpf ï¿½ %i",cpfInt);
 		}
 		catch(NumberFormatException  e){
-			System.out.println("Entrada inválida, o valor digitado não é um número");
+			System.out.println("Entrada invï¿½lida, o valor digitado nï¿½o ï¿½ um nï¿½mero");
 		}
 		
 		
@@ -173,13 +173,13 @@ public class ControladorSistemaPadaria {
 		try {
             dataAniversario = LocalDate.parse(dataAniversarioStr, formatar);
             
-            System.out.println("Data de aniversário: " + dataAniversario.format(formatar));
+            System.out.println("Data de aniversï¿½rio: " + dataAniversario.format(formatar));
         } catch (DateTimeParseException e) {
-            System.out.println("Data inválida! Certifique-se de digitar a data no formato correto (dd/MM/yyyy).");
+            System.out.println("Data invï¿½lida! Certifique-se de digitar a data no formato correto (dd/MM/yyyy).");
         }
 		
 		
-		//ENDEREÇO DO FUNCIONARIO
+		//ENDEREï¿½O DO FUNCIONARIO
 		try {
 			System.out.println("Digite o cidade do funcionario:");
 			cidade=scan.nextLine();	
@@ -187,7 +187,7 @@ public class ControladorSistemaPadaria {
 			System.out.println("Digite o bairro:");
 			bairro=scan.nextLine();
 			
-			System.out.println("Digite a rua e o número:");
+			System.out.println("Digite a rua e o nï¿½mero:");
 			ruaNumero=scan.nextLine();
 			endereco=cidade+" "+bairro+" "+ruaNumero;
 		}catch(NullPointerException e) {

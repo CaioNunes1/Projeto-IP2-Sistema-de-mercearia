@@ -20,8 +20,10 @@ public class Vendas {
 		String nomeProd="";
 		String nomeProdCarrinho="";
 		String marca="";
+		int quantidade=0;
+		Produtos prodEscolhido;
 		List<Produtos> prodPesquisa=new ArrayList<Produtos>();
-		System.out.println("Você selecionou Efetuar Compra\nDigite o nome do produto para ser pesquisado");
+		System.out.println("Vocï¿½ selecionou Efetuar Compra\nDigite o nome do produto para ser pesquisado");
 		try {
 			System.out.println("Digite o nome do produto");
 			nomeProd=scan.nextLine();
@@ -30,7 +32,7 @@ public class Vendas {
 			System.out.println("Entrada nula, digite novamente ");
 		}
 		
-		prodPesquisa = repProdutos.existeProdutoPorNome(nomeProd);//retorna o produto do repositorio que são do tipo prod.
+		prodPesquisa = repProdutos.existeProdutoPorNome(nomeProd);//retorna o produto do repositorio que sï¿½o do tipo prod.
 		
 		
 		if(prodPesquisa.isEmpty()) {
@@ -41,7 +43,7 @@ public class Vendas {
 		}
 		
 		try{
-			System.out.println("Quai produto deseja adicionar ao carrinho");
+			System.out.println("Qual produto deseja adicionar ao carrinho");
 			nomeProdCarrinho=scan.nextLine();
 			
 			System.out.println("Digite a marca do produto");
@@ -50,8 +52,37 @@ public class Vendas {
 		catch(NullPointerException e) {
 			System.out.println("Entrada nula, digite novamente ");
 		}
-		
-		prodVenda=repProdutos.ProdNomeParaAdicionarNoCarrinho(nomeProdCarrinho, marca);
+
+		prodEscolhido=repProdutos.ProdNomeParaAdicionarNoCarrinho(nomeProdCarrinho, marca);
+		if(prodEscolhido!=null){
+			System.out.println("Produto escolhido");
+		}
+
+		else{//aqui abrir uma tela so dizendo a mensgem a baixo
+			System.out.println("Produto nÃ£o existente");
+		}
+
+		if(prodEscolhido instanceof ProdutosVendidosPorUnidade){
+			try{
+				System.out.println("Digite a quantidade que vocÃª quer do produto");
+				quantidade=scan.nextInt();
+			}
+			catch (NullPointerException e){
+				System.out.println("Entrada nula, digite novamente ");
+			}
+			catch (InputMismatchException e){
+				System.out.println("Entrada invï¿½lida o valor digitado nï¿½o ï¿½ um inteiro");
+			}
+			if(quantidade>0){
+				prodEscolhido=
+			}
+		}
+
+
+
+
+
+
 		
 	}
 	public void cancelarVenda() {
