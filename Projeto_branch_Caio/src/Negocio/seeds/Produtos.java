@@ -54,4 +54,9 @@ public abstract class Produtos {
     public void setPrecoVenda(double precoVenda) {
         PrecoVenda = precoVenda;
     }
+	@Override
+	public String toString() {
+		return "Produtos [nome=" + nome + ", marca=" + marca + ", precoProduto=" + precoProduto + ", PrecoVenda="
+				+ PrecoVenda + ", fornecedor=" + fornecedor + "]";
+	}
 }

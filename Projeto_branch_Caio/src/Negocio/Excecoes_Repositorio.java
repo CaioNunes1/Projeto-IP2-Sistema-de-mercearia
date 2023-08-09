@@ -15,6 +15,11 @@ public class Excecoes_Repositorio extends RuntimeException{
 		
 	}
 	
+	public static Excecoes_Repositorio produtoNaoContemNome() {
+		return new Excecoes_Repositorio("Não foi achado nenhum produdo com o nome citado");
+		
+	}
+	
 	
 	//EXCEÇÕES REPOSITORIO DE FUNCIONARIOS
 	public static Excecoes_Repositorio funcionarioExistente() {

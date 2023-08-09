@@ -10,7 +10,9 @@ import Negocio.seeds.Perfil;
 import Negocio.seeds.Produtos;
 import Negocio.seeds.ProdutosVendidosPorPeso;
 
+import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -211,33 +213,6 @@ public class ControladorSistemaPadaria {
 		
 	}
 	
-	public void efetuarCompra() {
-		String nomeProd="";
-		String marca="";
-		try {
-			System.out.println("Você selecionou Efetuar Compra\nDigite o nome do produto");
-			nomeProd=scan.nextLine();
-			
-			System.out.println("Digite a marca do produto");
-			marca=scan.nextLine();
-			
-			
-		}catch(NullPointerException e) {
-			System.out.println("Entrada nula, digite novamente ");
-		}
-		
-		Produtos prod=repProdutos.existeProdutoPorNomeEMarca(nomeProd, marca);//retorna o produto do repositorio que são do tipo prod.
-		
-		// vendidos por peso ou ou prod.vendidos por unidade
-		if(prod!=null) {
-			if(prod instanceof ProdutosVendidosPorPeso) {
-				((ProdutosVendidosPorPeso) prod).CalculoPreco();
-			}	
-		}
-		else {
-			System.out.println("Produto não existente ");
-		}
-		
-		
-	}
+	
+	
 }

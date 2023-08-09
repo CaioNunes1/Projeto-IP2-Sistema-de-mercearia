@@ -37,4 +37,8 @@ public  class ProdutosVendidosPorPeso extends Produtos {
 	public void setPrecoPorQuilo(double precoPorQuilo) {
 		this.precoPorQuilo = precoPorQuilo;
 	}
+	@Override
+	public String toString() {
+		return "ProdutosVendidosPorPeso [peso=" + peso + ", precoPorQuilo=" + precoPorQuilo + "]";
+	}
 }

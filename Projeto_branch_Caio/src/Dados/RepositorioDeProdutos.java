@@ -5,6 +5,7 @@ import Negocio.seeds.Produtos;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RepositorioDeProdutos {
     ArrayList <Produtos> produtosRep;
@@ -31,13 +32,27 @@ public class RepositorioDeProdutos {
         return produtoJaExistente;
     }
     
-    public Produtos existeProdutoPorNomeEMarca(String nome,String marca) {
+    public List<Produtos> existeProdutoPorNome(String nome) {
+    	List<Produtos> prodContemNome=new ArrayList<Produtos>();
+    	
     	for(Produtos p:produtosRep) {
-    		if(p.getMarca().equalsIgnoreCase(marca)&& p.getNome().equals(nome)) {
-    			return p;
+    		if(p.getNome().contains(nome)) {
+    			prodContemNome.add(p);
     		}
     	}
-    	return null;
+    	
+    	return prodContemNome;
+    }
+    
+    public List<Produtos> ProdNomeParaAdicionarNoCarrinho(String nome,String marca) {
+    	List<Produtos> prodContemNome=new ArrayList<Produtos>();
+    	
+    	for(Produtos p:produtosRep) {
+    		 if(p.getNome().equalsIgnoreCase(nome) && p.getMarca().equalsIgnoreCase(marca)){
+    			 prodContemNome.add(p);
+    		 }
+    	}
+    	return prodContemNome;
     }
 
     public void cadastrarProduto(Produtos produtoX)  { 
