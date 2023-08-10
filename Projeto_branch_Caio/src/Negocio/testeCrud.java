@@ -70,6 +70,7 @@ public class testeCrud {
         System.out.println(venda);
         //
         System.out.println("\n");
+        //
 
     }
 }
