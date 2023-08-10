@@ -1,8 +1,7 @@
-package Dados;
+package Projeto_branch_Caio.src.Dados;
 
 import java.util.ArrayList;
-
-import Negocio.seeds.Produtos;
+import Projeto_branch_Caio.src.Negocio.seeds.Produtos;
 
 public class Estoque {
     ArrayList<Integer> estoque=new ArrayList<Integer>();  

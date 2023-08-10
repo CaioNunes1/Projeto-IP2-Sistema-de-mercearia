@@ -1,11 +1,15 @@
-package Dados;
+package Projeto_branch_Caio.src.Dados;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 import Negocio.Excecoes_Repositorio;
-import Negocio.seeds.Produtos;
+import Projeto_branch_Caio.src.Dados.RepositorioDeProdutos;
+import Projeto_branch_Caio.src.Negocio.seeds.Produtos;
+import Projeto_branch_Caio.src.Negocio.seeds.ProdutosVendidosPorUnidade;
 
 public class Vendas {
 	private Estoque estoque;
@@ -13,6 +17,14 @@ public class Vendas {
 	private List<Produtos> prodVenda=new ArrayList<Produtos>();//mudar a variavel repositorio por um arrayList de produtos
 	private String nomeFuncionario;
 	private RepositorioDeProdutos repProdutos;
+
+
+	public Vendas(LocalDateTime horaVenda,List<Produtos> prodVenda,String nomeFuncionario) {
+		this.horaVenda=horaVenda;
+		this.prodVenda=prodVenda;
+		this.nomeFuncionario=nomeFuncionario;
+	}
+
 	Scanner scan=new Scanner(System.in);
 	
 	
@@ -22,7 +34,7 @@ public class Vendas {
 		String marca="";
 		int quantidade=0;
 		Produtos prodEscolhido;
-		List<Produtos> prodPesquisa=new ArrayList<Produtos>();
+		List<Produtos> prodPesquisa;
 		System.out.println("Voc� selecionou Efetuar Compra\nDigite o nome do produto para ser pesquisado");
 		try {
 			System.out.println("Digite o nome do produto");
@@ -78,13 +90,8 @@ public class Vendas {
 			}
 		}
 
-
-
-
-
-
-		
 	}
+
 	public void cancelarVenda() {
 		
 	}
@@ -116,6 +123,13 @@ public class Vendas {
 	public void setNomeFuncionario(String nomeFuncionario) {
 		this.nomeFuncionario = nomeFuncionario;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Vendas{" +
+				", horaVenda=" + horaVenda +
+				", prodVenda=" + prodVenda +
+				", nomeFuncionario='" + nomeFuncionario + '\'' +
+				'}';
+	}
 }

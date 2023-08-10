@@ -1,6 +1,7 @@
-package Negocio.seeds;
+package Projeto_branch_Caio.src.Negocio.seeds;
 
-public abstract class Produtos {
+import Projeto_branch_Caio.src.Negocio.seeds.Fornecedor;
+public class Produtos {
     private String nome;
     private String marca;
     private double precoProduto;
@@ -13,11 +14,11 @@ public abstract class Produtos {
 		this.nome = nome;
 		this.marca = marca;
 		this.precoProduto = precoProduto;
-		PrecoVenda = precoVenda;
+		this.PrecoVenda = precoVenda;
 		this.fornecedor = fornecedor;
 	}
     public Produtos() {
-    	
+
     }
 
     public Fornecedor getFornecedor() {
@@ -59,4 +60,6 @@ public abstract class Produtos {
 		return "Produtos [nome=" + nome + ", marca=" + marca + ", precoProduto=" + precoProduto + ", PrecoVenda="
 				+ PrecoVenda + ", fornecedor=" + fornecedor + "]";
 	}
+
+
 }

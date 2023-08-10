@@ -1,7 +1,7 @@
-package Dados;
+package Projeto_branch_Caio.src.Dados;
 
 import Negocio.Excecoes_Repositorio;
-import Negocio.seeds.Funcionario;
+import Projeto_branch_Caio.src.Negocio.seeds.Funcionario;
 
 import java.util.ArrayList;
 

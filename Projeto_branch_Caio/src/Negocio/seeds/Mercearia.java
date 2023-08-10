@@ -1,4 +1,5 @@
-package Negocio.seeds;
+package Projeto_branch_Caio.src.Negocio.seeds;
+import Projeto_branch_Caio.src.Negocio.seeds.Fornecedor;
 public class Mercearia {
     public String nome;
     public String Endereco;
