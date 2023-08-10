@@ -1,8 +1,7 @@
-package Dados;
+package Projeto_branch_Caio.src.Dados;
 
 import Negocio.Excecoes_Repositorio;
-import Negocio.seeds.Produtos;
-
+import Projeto_branch_Caio.src.Negocio.seeds.Produtos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,7 +48,6 @@ public class RepositorioDeProdutos {
     	for(Produtos p:produtosRep) {
     		 if(p.getNome().equalsIgnoreCase(nome) && p.getMarca().equalsIgnoreCase(marca)){
     			 return p;
-                 break;
     		 }
     	}
     	return null;

@@ -1,4 +1,4 @@
-package Negocio.seeds;
+package Projeto_branch_Caio.src.Negocio.seeds;
 
 public class Fornecedor {
     private String nome;
@@ -22,5 +22,13 @@ public class Fornecedor {
     }
     public void setEmpresa(String empresafornecedor) {
         this.empresa = empresa;
+    }
+
+    @Override
+    public String toString() {
+        return "Fornecedor{" +
+                "nome='" + nome + '\'' +
+                ", empresa='" + empresa + '\'' +
+                '}';
     }
 }

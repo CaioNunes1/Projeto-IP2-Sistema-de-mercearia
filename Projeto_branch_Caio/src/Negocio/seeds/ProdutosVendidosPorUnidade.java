@@ -1,5 +1,5 @@
-package Negocio.seeds;
-
+package Projeto_branch_Caio.src.Negocio.seeds;
+import Projeto_branch_Caio.src.Negocio.seeds.Fornecedor;
 public class ProdutosVendidosPorUnidade extends Produtos {
     private int quantidade;
 
@@ -17,8 +17,6 @@ public class ProdutosVendidosPorUnidade extends Produtos {
         return valor;
     }
 
-    
-
 	//GETS AND SETS:
     public int getQuantidade() {
         return quantidade;
@@ -26,8 +24,7 @@ public class ProdutosVendidosPorUnidade extends Produtos {
     public void setQuantidade(int quantidade) {
         this.quantidade = quantidade;
     }
-	@Override
-	public String toString() {
-		return "ProdutosVendidosPorUnidade [quantidade=" + quantidade + "]";
-	}
+
+
+
 }

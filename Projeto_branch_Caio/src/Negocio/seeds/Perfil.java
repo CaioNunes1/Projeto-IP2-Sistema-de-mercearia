@@ -1,5 +1,5 @@
-package Negocio.seeds;
-
+package Projeto_branch_Caio.src.Negocio.seeds;
+import Projeto_branch_Caio.src.Negocio.seeds.Funcionario;
 public class Perfil {
     private String nome;
     private String senha;
@@ -28,5 +28,14 @@ public class Perfil {
    
     public Funcionario getUsuario() {
         return usuario;
+    }
+
+    @Override
+    public String toString() {
+        return "Perfil{" +
+                "nome='" + nome + '\'' +
+                ", senha='" + senha + '\'' +
+                ", usuario=" + usuario +
+                '}';
     }
 }

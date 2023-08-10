@@ -1,5 +1,5 @@
-package Negocio.seeds;
-
+package Projeto_branch_Caio.src.Negocio.seeds;
+import Projeto_branch_Caio.src.Negocio.seeds.Fornecedor;
 public class ProdutosVendidosPorPeso extends Produtos {
     private double peso;
     private double precoPorQuilo;

@@ -1,18 +1,10 @@
-package Negocio;
+package Projeto_branch_Caio.src.Negocio;
 
-import Dados.RepositorioDeFornecedor;
-import Dados.RepositorioDePerfis;
-import Dados.RepositorioDeProdutos;
-import Dados.RepositorioFuncionarios;
-import Dados.RepositorioVendas;
-import Negocio.seeds.Funcionario;
-import Negocio.seeds.Perfil;
-import Negocio.seeds.Produtos;
-import Negocio.seeds.ProdutosVendidosPorPeso;
+import Projeto_branch_Caio.src.Dados.*;
+import Projeto_branch_Caio.src.Negocio.seeds.Funcionario;
+import Projeto_branch_Caio.src.Negocio.seeds.Perfil;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.List;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

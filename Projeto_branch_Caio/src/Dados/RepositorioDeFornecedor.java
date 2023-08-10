@@ -1,7 +1,8 @@
-package Dados;
+package Projeto_branch_Caio.src.Dados;
 
 import Negocio.Excecoes_Repositorio;
-import Negocio.seeds.Fornecedor;
+
+import Projeto_branch_Caio.src.Negocio.seeds.Fornecedor;
 
 import java.util.ArrayList;
 
